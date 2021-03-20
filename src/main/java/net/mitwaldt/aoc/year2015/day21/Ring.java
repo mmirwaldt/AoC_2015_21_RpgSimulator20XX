@@ -1,6 +1,6 @@
 package net.mitwaldt.aoc.year2015.day21;
 
-public enum Ring implements Item {
+public enum Ring {
     DAMAGE_PLUS_1(25, 1, 0),
     DAMAGE_PLUS_2(50, 2, 0),
     DAMAGE_PLUS_3(100, 3, 0),
@@ -8,23 +8,20 @@ public enum Ring implements Item {
     DEFENSE_PLUS_2(40, 0, 2),
     DEFENSE_PLUS_3(80, 0, 3);
 
-    private final EnumItem item;
+    private final Item item;
 
     Ring(int cost, int damage, int armor) {
-        this.item = new EnumItem(cost, damage, armor);
+        this.item = new Item(cost, damage, armor);
     }
 
-    @Override
     public int getCost() {
         return item.getCost();
     }
 
-    @Override
     public int getDamage() {
         return item.getDamage();
     }
 
-    @Override
     public int getArmor() {
         return item.getArmor();
     }

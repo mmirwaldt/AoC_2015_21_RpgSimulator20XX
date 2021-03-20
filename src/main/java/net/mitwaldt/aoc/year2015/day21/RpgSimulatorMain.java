@@ -7,7 +7,7 @@ import static java.lang.Math.min;
 
 public class RpgSimulatorMain {
     public static void main(String[] args) {
-        final List<Player> mePlayers = PlayerGenerator.createPlayers();
+        final List<Player> mePlayers = PlayerGenerator.createMePlayers();
         int minCost = Integer.MAX_VALUE;
         int maxCost = 0;
         for (Player me : mePlayers) {
