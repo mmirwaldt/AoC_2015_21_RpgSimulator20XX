@@ -23,7 +23,7 @@ public class RpgSimulatorMain {
     }
 
     private static Player createEnemy() {
-        // I am too lazy to read out the values from input.txt
+        // I am too lazy to read out the values from input.txt ;-)
         return new Player("enemy", 104, 8, 1);
     }
 }

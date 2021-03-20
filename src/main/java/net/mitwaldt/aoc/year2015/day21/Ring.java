@@ -8,21 +8,25 @@ public enum Ring {
     DEFENSE_PLUS_2(40, 0, 2),
     DEFENSE_PLUS_3(80, 0, 3);
 
-    private final Item item;
+    private final int cost;
+    private final int damage;
+    private final int armor;
 
     Ring(int cost, int damage, int armor) {
-        this.item = new Item(cost, damage, armor);
+        this.cost = cost;
+        this.damage = damage;
+        this.armor = armor;
     }
 
     public int getCost() {
-        return item.getCost();
+        return cost;
     }
 
     public int getDamage() {
-        return item.getDamage();
+        return damage;
     }
 
     public int getArmor() {
-        return item.getArmor();
+        return armor;
     }
 }

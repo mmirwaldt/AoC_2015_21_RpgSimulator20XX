@@ -1,7 +1,6 @@
 package net.mitwaldt.aoc.year2015.day21;
 
 import java.util.List;
-import java.util.Set;
 
 public class Player {
     private final String name;

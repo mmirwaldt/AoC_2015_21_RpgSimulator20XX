@@ -8,17 +8,19 @@ public enum Armor {
     BANDEDMAIL(75, 4),
     PLATEMAIL(102, 5);
 
-    private final Item item;
+    private final int cost;
+    private final int armor;
 
     Armor(int cost, int armor) {
-        this.item = new Item(cost, 0, armor);
+        this.cost = cost;
+        this.armor = armor;
     }
 
     public int getCost() {
-        return item.getCost();
+        return cost;
     }
 
     public int getArmor() {
-        return item.getArmor();
+        return armor;
     }
 }

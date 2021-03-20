@@ -7,17 +7,19 @@ public enum Weapon {
     LONGSWORD(40, 7),
     GREATAXE(74, 8);
 
-    private final Item item;
+    private final int cost;
+    private final int damage;
 
     Weapon(int cost, int damage) {
-        this.item = new Item(cost, damage, 0);
+        this.cost = cost;
+        this.damage = damage;
     }
 
     public int getCost() {
-        return item.getCost();
+        return cost;
     }
 
     public int getDamage() {
-        return item.getDamage();
+        return damage;
     }
 }
